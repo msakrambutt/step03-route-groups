@@ -1,10 +1,7 @@
 import React from 'react'
-import {FC} from 'react'
-interface headProps {
-  params:{name:string[]}
-}
 
-const head:FC<headProps> =({params})=> {
+
+export default function head({params}:{params:{name:string[]}}){
     const [name]=params.name
   return (
     
@@ -15,4 +12,4 @@ const head:FC<headProps> =({params})=> {
   )
 }
 
-export default head
+ 

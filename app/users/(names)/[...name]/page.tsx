@@ -1,13 +1,13 @@
 
 import React from 'react';
-import {FC} from 'react';
-interface pageProps{
-  params:{name: string}
-}
+import Link from 'next/link';
 
-const page:FC<pageProps> =({params})=> {
+export default function page({params}:{params:{name:string}}){
   return (
-    <div>Other Names: {params.name}</div>
+    <div>Other Names: {params.name}
+    <br/>
+          <Link href="/">Home Page</Link>
+    </div>
   )
 }
-export default page
+ 
